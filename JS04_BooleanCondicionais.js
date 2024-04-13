@@ -80,4 +80,10 @@ if(('Gato' === 'gato') || (5 > 2)) {
   console.log('Falso');
 }
 
+if(""){
+  console.log("Aspas vazia");
+}else if(" "){
+  console.log("Aspas com espaço");
+}
+
 

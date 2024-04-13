@@ -5,7 +5,6 @@ var pi = 3.14;
 var exp1 = 2e10;                  // ZERO A DIREITA
 var exp2 = 2e5;                   // ZERO A DIREITA
 var exp3 = 2e-5;                  // ZERO A ESQUERDA
-
 var exp4 = 2e-6;                  // ZERO A ESQUERDA - QUATIDADE MÁXIMA
 
 console.log(idade);               //24

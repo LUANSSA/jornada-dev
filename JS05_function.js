@@ -34,11 +34,11 @@ console.log(corFavorita());
 function mostrarConsole(){
   console.log("função mostrarConsole ativa");
 }
-addEventListener("click",mostrarConsole);
+// addEventListener("click",mostrarConsole);
 
 //SEGUNDO JEITO DE SE FAZER
 //PASSANDO UMA FUNÇÃO ANÔNIMA COMO ARGUMENTO
-addEventListener("click",function(){console.log("função addEventListener ativa")});
+// addEventListener("click",function(){console.log("função addEventListener ativa")});
 
 
 //fuctionFactorial
@@ -52,6 +52,10 @@ function factorialFunction(n){
     return (n *factorialFunction(n-1));
   }
 }
+// Retorna fatorial
+console.log(factorialFunction(6));
+
+
 let a, b, c, d, e;
 a = factorialFunction(0); //a recebe o valor 1
 b = factorialFunction(1); //b recebe o valor 1

@@ -1,20 +1,27 @@
-var nome = "Luan";            //String
-var idade = 24;               //Number
-var possuiFaculdade = true;   //Boolean
-var time;                     //undefined
-var comida = null;            //Null
-var simbolo =  Symbol();      //Symbol
-var novoObjeto = {}           //Object
-var lista = ["A", "B"]; 
+var nome = "Luan";                      //String
+var idade = 24;                         //Number
+var possuiFaculdade = true;             //Boolean
+var time;                               //undefined
+var comida = null;                      //Null
+var simbolo =  Symbol();                //Symbol
+var novoObjeto = {}                     //Object
+var lista = ["A", "B"];                 //Object
+var matematica = Math;                  //Object [Math] {}
+var absoluto = matematica.abs;          //[Function: abs]
+var assincrono = async function(){};    //[AsyncFunction: assincrono]
 
-console.log(typeof(nome));
-console.log(typeof(idade));
-console.log(typeof(possuiFaculdade));
-console.log(typeof(time));
-console.log(typeof(comida));
-console.log(typeof(simbolo));
-console.log(typeof(novoObjeto));
-console.log(typeof(lista));
+console.log(typeof(nome));              //String
+console.log(typeof(idade));             //Number
+console.log(typeof(possuiFaculdade));   //Boolean
+console.log(typeof(time));              //undefined
+console.log(typeof(comida));            //Null
+console.log(typeof(simbolo));           //Symbol
+console.log(typeof(novoObjeto));        //Object
+console.log(typeof(lista));             //Object
+console.log(matematica);                //Object [Math] {}
+console.log(absoluto);                  //[Function: abs]  exemplo: absoluto(10 * -23) | 230
+console.log(assincrono);                //[AsyncFunction: assincrono]
+
 
 var sobrenome = "Souza";
 console.log(nome +" "+sobrenome);

@@ -29,7 +29,9 @@ console.log(ex2);
 //#oi
 
 //NESTE CASO O olá SÓ EXISTE DENTRO DO BLOCO
+
 //--------------------------------------------------------------------
+
 //exemplo - 3:
 {
 	var ex3 = "oi";
@@ -38,12 +40,14 @@ console.log(ex3);
 
 //#oi;
 //NESTE CASO O oi CONTINUA A EXISTIR FORA DO BLOCO
+
 //--------------------------------------------------------------------
+
 //exemplo - 4:
 {
-	let ex4 = "oi;
+	// let ex4 = "oi;
 }
-console.log(ex4);
+//console.log(ex4);
 
 //#ERRO
 //NESTE CASO O ex4 NÃO EXISTE FORA DO BLOCO E RESULTA EM ERRO
@@ -52,7 +56,7 @@ console.log(ex4);
 //exemplo - 5:
 
 const numero = 10;
-numero = 20;
+//numero = 20;
 //#ERRO
 //O VALOR DA VARIÁVEL const NÃO PODE SER ALTERADO
 //--------------------------------------------------------------------
@@ -69,34 +73,38 @@ console.log(pessoa);
 
 //#{nome:'Luna', sobrenome:'Souza'}
 //#{nome:'Luan', sobrenome:'Souza', idade: 20}
+//--------------------------------------------------------------------
 
 //O VALOR DA CONST DO ENDEREÇO DE MEMÓRIA DO OBJETO PESSOA
 //NÃO É ALTERADO!
 //MAS OS VALORES DENTRO DESSE OBJETO PODEM SER ALTERADOS
-//--------------------------------------------------------------------
-//exemplo - 7:
-const pessoa = {} /*recebe*/ const pessoa2 = {}  //false
-const pessoa = {} /*recebe*/ let pessoa2 = {}    //false
-const pessoa = {} /*recebe*/ var pessoa2 = {}    //false
-let pessoa  =  {} /*recebe*/ const pessoa2 = {}  //true
-let pessoa = {}   /*recebe*/ let pessoa2 = {}    //true
-let pessoa = {}   /*recebe*/ var pessoa2 = {}    //true
-var pessoa = {}   /*recebe*/ const pessoa2 = {}  //true
-var pessoa = {}   /*recebe*/ let pessoa2 = {}    //true
-var pessoa = {}   /*recebe*/ var pessoa2 = {}    //true
-//--------------------------------------------------------------------
-//exemplo - 8
 
+//exemplo - 7:
+//const pessoa = {} /*recebe const pessoa2 = {} */  //false
+//const pessoa = {} /*recebe let pessoa2 = {}   */  //false
+//const pessoa = {} /*recebe var pessoa2 = {}   */  //false
+//let pessoa = {} /*recebe const pessoa2 = {} */  //true
+//let pessoa = {}   /*recebe let pessoa2 = {}   */  //true
+//let pessoa = {}   /*recebe var pessoa2 = {}   */  //true
+//var pessoa = {}   /*recebe const pessoa2 = {} */  //true
+//var pessoa = {}   /*recebe let pessoa2 = {}   */  //true
+//var pessoa = {}   /*recebe var pessoa2 = {}   */  //true
+
+//--------------------------------------------------------------------
+
+//exemplo - 8
 var a = "qualquercoisa";
-var a = "coisaalguma"; True
+//var a = "coisaalguma"; True
 
 let b = "qualquercoisa";
-let b = "coisaalguma" False
+//let b = "coisaalguma" False
+
 //--------------------------------------------------------------------
+
 //exemplo - 9
-console.log(pessoa);
-var pessoa = "Luan";
-console.log(pessoa);
+console.log(pessoaExemplo0);
+var pessoaExemplo0 = "Luan";
+console.log(pessoaExemplo0);
 //#undefined
 //#Luan
 //A VARIÁVEL pessoa EXISTE E VAI PARA O TOPO DO ARQUIVO. PÓREM É INIVSÍVEL
